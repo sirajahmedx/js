@@ -102,3 +102,36 @@ function removeDuplicates(arr) {
 }
 
 console.log(removeDuplicates([1, 2, 31, 1, 1]));
+
+// 09_Capitalize first word
+function capitalizeLastWord(str) {
+   return str.replace(/\w+$/, (w) => w[0].toUpperCase() + w.slice(1));
+}
+console.log(capitalizeLastWord("Hey there"))
+
+// 10_generatePassword
+
+function generatePassword(length){
+   let password = ""
+   let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+   for (let i = 0; i < length; i++) {
+      password += letters.charAt(Math.floor(Math.random() * 62))
+   }
+   return password;
+}
+console.log(generatePassword(7))
+
+// 11_anagrams
+
+function anargms(str1, str2){
+   let str1Array = str1.split("")
+   let str2Array = str2.split("")
+
+   let newArray = str1Array.concat(str2Array)
+
+   // console.log(str1Array)
+   // console.log(str2Array)
+   console.log(myarray)
+}
+
+anargms("HI", "THERE")
