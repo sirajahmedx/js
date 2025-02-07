@@ -239,27 +239,13 @@ Implement an `AuthModule` using the Module Pattern with the following methods:
 -  `logout()`: Logs the user out by clearing the stored username.
 -  `getUser()`: Returns the current logged-in username or "No user logged in" if no one is logged in.
 
+### Question: Create a Simple Bank Account Module
 
-## 12. Event Delegation
+Implement a `BankAccountModule` using the Module Pattern with the following methods:
 
-
-### Question:
-
-Explain how you would use **event delegation** to handle click events on the list items.
-
-Write the JavaScript code to handle the click events using event delegation.
-
-```js
-function handleItemClick(event) {
-   if (event.target && event.target.nodeName === 'LI') {
-      console.log('Item clicked:', event.target.textContent);
-   }
-}
-
-document.getElementById('itemList').addEventListener('click', handleItemClick);
-````
-
-```
+- `deposit(amount)`: Adds money to the balance.
+- `withdraw(amount)`: Deducts money from the balance (if enough funds are available).
+- `getBalance()`: Returns the current balance.
 
 ---
 ```
