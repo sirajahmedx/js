@@ -203,26 +203,63 @@ What potential issue does this code cause in terms of **memory management**, and
 
 These questions will help you prepare for JavaScript challenges! 🚀
 
-
-
-
-Here are **short and clear commit messages** for each question:  
- 
+Here are **short and clear commit messages** for each question:
 
 6. **Prototypal Inheritance**  
-   📌 `Created Person constructor with prototype-based greet method`  
+   📌 `Created Person constructor with prototype-based greet method`
 
 7. **Debouncing**  
-   📌 `Implemented debounce function for optimized input handling`  
+   📌 `Implemented debounce function for optimized input handling`
 
 8. **Array & Object Manipulation**  
-   📌 `Transformed array into object using id as key`  
+   📌 `Transformed array into object using id as key`
 
 9. **Currying**  
-   📌 `Implemented curried multiplication function`  
+   📌 `Implemented curried multiplication function`
 
-10. **Memory Leaks**  
-   📌 `Identified and optimized potential memory leak in loop`  
+10.   **Memory Leaks**  
+      📌 `Identified and optimized potential memory leak in loop`
 
 These messages follow best practices: **concise, descriptive, and action-oriented.** 🚀  
 Let me know if you need any refinements!
+
+## 11. Module Pattern
+
+### Scenario: Encapsulation with Module Pattern
+
+You need to create a module that encapsulates private variables and exposes public methods.
+
+### Question:
+
+### Question: Create a User Authentication Module
+
+Implement an `AuthModule` using the Module Pattern with the following methods:
+
+-  `login(username, password)`: Simulates logging in by storing the username if the password is correct.
+-  `logout()`: Logs the user out by clearing the stored username.
+-  `getUser()`: Returns the current logged-in username or "No user logged in" if no one is logged in.
+
+
+## 12. Event Delegation
+
+
+### Question:
+
+Explain how you would use **event delegation** to handle click events on the list items.
+
+Write the JavaScript code to handle the click events using event delegation.
+
+```js
+function handleItemClick(event) {
+   if (event.target && event.target.nodeName === 'LI') {
+      console.log('Item clicked:', event.target.textContent);
+   }
+}
+
+document.getElementById('itemList').addEventListener('click', handleItemClick);
+````
+
+```
+
+---
+```
